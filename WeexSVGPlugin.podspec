@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
                    Weex SVG plugin
                    DESC
 
-  s.homepage     = "https://github.com/weexteam/weex-pack.git"
+  s.homepage     = "https://github.com/wtowto7207/WeexSVGPlugin"
   s.license = {
     :type => 'Copyright',
     :text => <<-LICENSE
@@ -21,8 +21,7 @@ Pod::Spec.new do |s|
                    }
   s.platform     = :ios
   s.ios.deployment_target = "7.0"
-
-  s.source =  { :path => '.' }
+  s.source       = { :git => "https://github.com/wtowto7207/WeexSVGPlugin.git", :tag => "#{s.version}" }
   s.source_files  = "WeexSVGPlugin/**/*.{h,m,mm}"
   # s.exclude_files = "Classes/Exclude"
   s.resources = "WeexSVGPlugin/Resources/*"
